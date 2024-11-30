@@ -1,17 +1,50 @@
+body{
+    background-color: tan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    margin-top: 0;
+}
 .playground{
-    width:50%;
-    height:50%;
+    width: 400px;
+    height: 200px;
     margin: auto;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid brown;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
-body html .root {
-    height: 100%;
-}
+
 .ball{
     background-color: black;
     box-shadow: 0 10px 10px -6px;
-    position: relative;
-    right: 0px;
+    position: absolute;
     height: 50px;
     width: 50px;
     border-radius: 25px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.start{
+    cursor: pointer;
+    background-color: tan;
+    padding: 14px 40px;
+    border: 1px solid brown;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.start:hover{
+    background-color: rgb(240, 190, 125);
 }
